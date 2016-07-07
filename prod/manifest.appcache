@@ -1,4 +1,5 @@
 CACHE MANIFEST
+<<<<<<< HEAD
 # created 2016-07-07T20:58:52.276Z
 
 CACHE:
@@ -6,9 +7,29 @@ assets/hospitalrun-7a8ab8ac38814407d16bec9521f8c49b.js
 assets/hospitalrun-fa078754718e002d4470be8e8f254f0a.css
 assets/vendor-886d01f5f13778a0e0cbc58c745ed897.js
 assets/vendor-ed8acd5f4063b4b83b5df16f6da9e8b0.css
+=======
+# created 2016-07-01T21:17:45.430Z
+
+CACHE:
+assets/failed.png
+assets/hospitalrun.css
+assets/hospitalrun.css.map
+assets/hospitalrun.js
+assets/hospitalrun.map
+assets/passed.png
+assets/test-loader.js
+assets/test-support.css
+assets/test-support.js
+assets/test-support.map
+assets/tests.js
+assets/tests.map
+assets/vendor.css
+assets/vendor.js
+assets/vendor.map
+>>>>>>> de1e7eab5e7652c86d349e1ee7626dc7c2688e20
 dymo/BarcodeAsImage.label
-favicon-7440091f4e8bd83e23e4d5824c2c3da4.png
 favicon.ico
+favicon.png
 fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf

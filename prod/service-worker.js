@@ -1,17 +1,40 @@
 importScripts('sw-toolbox.js');
 var CACHE_PREFIX = 'brocsw-v';
+<<<<<<< HEAD
 var CACHE_VERSION = CACHE_PREFIX+'1467925132523';
+=======
+var CACHE_VERSION = CACHE_PREFIX+'1467407865645';
+>>>>>>> de1e7eab5e7652c86d349e1ee7626dc7c2688e20
 toolbox.options.cache.name = CACHE_VERSION;
+toolbox.options.debug = true;
 var urlsToPrefetch = [
     '/',
+<<<<<<< HEAD
     "assets/hospitalrun-7a8ab8ac38814407d16bec9521f8c49b.js",
     "assets/hospitalrun-fa078754718e002d4470be8e8f254f0a.css",
     "assets/vendor-886d01f5f13778a0e0cbc58c745ed897.js",
     "assets/vendor-ed8acd5f4063b4b83b5df16f6da9e8b0.css",
+=======
+    "assets/failed.png",
+    "assets/hospitalrun.css",
+    "assets/hospitalrun.css.map",
+    "assets/hospitalrun.js",
+    "assets/hospitalrun.map",
+    "assets/passed.png",
+    "assets/test-loader.js",
+    "assets/test-support.css",
+    "assets/test-support.js",
+    "assets/test-support.map",
+    "assets/tests.js",
+    "assets/tests.map",
+    "assets/vendor.css",
+    "assets/vendor.js",
+    "assets/vendor.map",
+>>>>>>> de1e7eab5e7652c86d349e1ee7626dc7c2688e20
     "crossdomain.xml",
     "dymo/BarcodeAsImage.label",
-    "favicon-7440091f4e8bd83e23e4d5824c2c3da4.png",
     "favicon.ico",
+    "favicon.png",
     "fonts/glyphicons-halflings-regular.eot",
     "fonts/glyphicons-halflings-regular.svg",
     "fonts/glyphicons-halflings-regular.ttf",
@@ -41,7 +64,9 @@ var urlsToPrefetch = [
     "fonts/octicons.ttf",
     "fonts/octicons.woff",
     "index.html",
-    "robots.txt"
+    "robots.txt",
+    "testem.js",
+    "tests/index.html"
 ];
 urlsToPrefetch.forEach(function(url) {
   toolbox.router.any(url, toolbox.cacheFirst);
@@ -13440,6 +13465,7 @@ function runPouchFn(pouchDBFn, request, resolve, reject) {
 }
 
 self.addEventListener('install', function(event) {
+console.log('Handling install event. Resources to pre-fetch:', urlsToPrefetch);
   if (self.skipWaiting) { self.skipWaiting(); }
 });
 
